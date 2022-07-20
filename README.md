@@ -11,4 +11,4 @@ from account where year (account_creation_date)='2017';
 |  Karen     | Movsesyan | 1995-01-20 |
 
 #### Скрин из DBeaver 22.1.2 
-![]
+![](https://github.com/AlekseiMysenko/--SQL/blob/main/Вывести%20имена%2C%20фамилии%20и%20даты%20рождения%20всех%20пользователей%2C%20создавших%20аккаунт%20в%202017%20году.jpg)
