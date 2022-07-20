@@ -11,5 +11,4 @@ from account where year (account_creation_date)='2017';
 |  Karen     | Movsesyan | 1995-01-20 |
 
 #### Скрин из DBeaver 22.1.2 
-
 ![]
