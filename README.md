@@ -43,4 +43,4 @@ VALUES ('Red Dead Redemption', '2010-02-02',  2, 12, 1, 0);
 #### update game set price = 2000 where Game_name = 'Red Dead Redemption';
 
 #### Скрин из DBeaver 22.1.2
-![]()
+![](https://github.com/AlekseiMysenko/--SQL/blob/main/Добавить%20игре%20Red%20Dead%20Redemption%20цену%20в%202000.jpg)
