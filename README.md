@@ -1,8 +1,12 @@
 # Примеры простых запросов SQL
 
-#### 1. Задача: Вывести имена, фамилии и даты рождения всех пользователей, создавших аккаунт в 2017 году
+### 1. Задача: 
 
-#### Запрос: select first_name, last_name, birth_date  
+#### Вывести имена, фамилии и даты рождения всех пользователей, создавших аккаунт в 2017 году
+
+### Запрос: 
+
+#### select first_name, last_name, birth_date  
 from account where year (account_creation_date)='2017';
 
 | first_name | last_name | birth_date |
@@ -12,3 +16,14 @@ from account where year (account_creation_date)='2017';
 
 #### Скрин из DBeaver 22.1.2 
 ![](https://github.com/AlekseiMysenko/--SQL/blob/main/Вывести%20имена%2C%20фамилии%20и%20даты%20рождения%20всех%20пользователей%2C%20создавших%20аккаунт%20в%202017%20году.jpg)
+
+### 2. Задача:
+
+#### Добавить в базу запись об игре Red Dead Redemption (внести информацию о названии, дате выхода, компании-разработчике)
+
+### Запрос: 
+
+#### INSERT INTO game (Game_name, Release_date, Genre, Developer, Is_online, price)
+VALUES ('Red Dead Redemption', '2010-02-02',  2, 12, 1, 0);
+
+![]()
