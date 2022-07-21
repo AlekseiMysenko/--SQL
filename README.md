@@ -58,4 +58,4 @@ join company c on g.Developer=c.id
 where year (g.Release_date) < '2011' and c.country = 'USA' and g.Is_online =1; 
 
 #### Скрин из DBeaver 22.1.2
-![](https://github.com/AlekseiMysenko/--SQL/blob/main/Добавить%20игре%20Red%20Dead%20Redemption%20цену%20в%202000.jpg)
+![](https://github.com/AlekseiMysenko/--SQL/blob/main/Вывести%20онлайн-игры%2C%20созданные%20в%20USA%20и%20вышедших%20раньше%202011%20г.jpg)
