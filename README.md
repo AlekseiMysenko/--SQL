@@ -6,10 +6,10 @@
 #### - Использовал комманду SELECT
 
 ### Запрос: 
-
-#### SELECT first_name, last_name, birth_date  
-#### FROM account where year (account_creation_date)='2017';
-
+~~~~
+SELECT first_name, last_name, birth_date  
+FROM account where year (account_creation_date)='2017';
+~~~~
 ### Результат:
 
 | first_name | last_name | birth_date |
@@ -26,10 +26,10 @@
 #### - Использовал команду INSERT
 
 ### Запрос: 
-
-#### INSERT INTO game (Game_name, Release_date, Genre, Developer, Is_online, price)
-#### VALUES ('Red Dead Redemption', '2010-02-02',  2, 12, 1, 0);
-
+~~~~
+INSERT INTO game (Game_name, Release_date, Genre, Developer, Is_online, price)
+VALUES ('Red Dead Redemption', '2010-02-02',  2, 12, 1, 0);
+~~~~
 #### Скрин из DBeaver 22.1.2
 ![](https://github.com/AlekseiMysenko/--SQL/blob/main/Добавить%20в%20базу%20запись%20об%20игре%20Red%20Dead%20Redemption%20(внести%20информацию%20о%20названии%2C%20дате%20выхода%2C%20компании-разработчике).jpg)
 
@@ -39,9 +39,9 @@
 #### - Использовал команду UPDATE
 
 ### Запрос: 
-
-#### UPDATE game set price = 2000 WHERE Game_name = 'Red Dead Redemption';
-
+~~~~
+UPDATE game set price = 2000 WHERE Game_name = 'Red Dead Redemption';
+~~~~
 #### Скрин из DBeaver 22.1.2
 ![](https://github.com/AlekseiMysenko/--SQL/blob/main/Добавить%20игре%20Red%20Dead%20Redemption%20цену%20в%202000.jpg)
 
@@ -51,12 +51,12 @@
 #### - Объединение выборки с разных таблиц с использованием комманды JOIN
 
 ### Запрос: 
-
-#### SELECT Game_name, g.id
-#### FROM game g 
-#### JOIN company c on g.Developer=c.id 
-#### WHERE year (g.Release_date) < '2011' and c.country = 'USA' and g.Is_online =1; 
-
+~~~~
+SELECT Game_name, g.id
+FROM game g 
+JOIN company c on g.Developer=c.id 
+WHERE year (g.Release_date) < '2011' and c.country = 'USA' and g.Is_online =1; 
+~~~~
 #### Скрин из DBeaver 22.1.2
 ![](https://github.com/AlekseiMysenko/--SQL/blob/main/Вывести%20онлайн-игры%2C%20созданные%20в%20USA%20и%20вышедших%20раньше%202011%20г.jpg)
 
@@ -66,8 +66,8 @@
 #### - Использовал команду DELETE
 
 ### Запрос: 
-
-#### DELETE from game where Game_name = 'Red Dead Redemption';
-
+~~~~
+DELETE from game where Game_name = 'Red Dead Redemption';
+~~~~
 #### Скрин из DBeaver 22.1.2
 ![](https://github.com/AlekseiMysenko/--SQL/blob/main/Удалить%20игру%20Red%20Dead%20Redemption%20из%20базы.jpg)
