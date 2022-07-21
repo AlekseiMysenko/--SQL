@@ -26,4 +26,5 @@ from account where year (account_creation_date)='2017';
 #### INSERT INTO game (Game_name, Release_date, Genre, Developer, Is_online, price)
 VALUES ('Red Dead Redemption', '2010-02-02',  2, 12, 1, 0);
 
-![]()
+#### Скрин из DBeaver 22.1.2
+![](https://github.com/AlekseiMysenko/--SQL/blob/main/Добавить%20в%20базу%20запись%20об%20игре%20Red%20Dead%20Redemption%20(внести%20информацию%20о%20названии%2C%20дате%20выхода%2C%20компании-разработчике).jpg)
