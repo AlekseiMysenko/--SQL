@@ -44,3 +44,18 @@ VALUES ('Red Dead Redemption', '2010-02-02',  2, 12, 1, 0);
 
 #### Скрин из DBeaver 22.1.2
 ![](https://github.com/AlekseiMysenko/--SQL/blob/main/Добавить%20игре%20Red%20Dead%20Redemption%20цену%20в%202000.jpg)
+
+### 4. Задача:
+
+#### Выбрать онлайн-игры, созданные в USA и вышедших раньше 2011 года
+#### Объединение выборки с разных таблиц с использованием комманды JOIN
+
+### Запрос: 
+
+#### select Game_name, g.id
+from game g 
+join company c on g.Developer=c.id 
+where year (g.Release_date) < '2011' and c.country = 'USA' and g.Is_online =1; 
+
+#### Скрин из DBeaver 22.1.2
+![](https://github.com/AlekseiMysenko/--SQL/blob/main/Добавить%20игре%20Red%20Dead%20Redemption%20цену%20в%202000.jpg)
