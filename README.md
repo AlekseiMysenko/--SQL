@@ -3,11 +3,14 @@
 ### 1. Задача: 
 
 #### Вывести имена, фамилии и даты рождения всех пользователей, создавших аккаунт в 2017 году
+#### Использовал комманду SELECT
 
 ### Запрос: 
 
 #### select first_name, last_name, birth_date  
 from account where year (account_creation_date)='2017';
+
+### Результат:
 
 | first_name | last_name | birth_date |
 |------------|-----------|------------|
@@ -20,6 +23,7 @@ from account where year (account_creation_date)='2017';
 ### 2. Задача:
 
 #### Добавить в базу запись об игре Red Dead Redemption (внести информацию о названии, дате выхода, компании-разработчике)
+#### Использовал команду INSERT
 
 ### Запрос: 
 
@@ -28,3 +32,15 @@ VALUES ('Red Dead Redemption', '2010-02-02',  2, 12, 1, 0);
 
 #### Скрин из DBeaver 22.1.2
 ![](https://github.com/AlekseiMysenko/--SQL/blob/main/Добавить%20в%20базу%20запись%20об%20игре%20Red%20Dead%20Redemption%20(внести%20информацию%20о%20названии%2C%20дате%20выхода%2C%20компании-разработчике).jpg)
+
+### 3. Задача:
+
+#### Добавить игре Red Dead Redemption цену в 2000
+#### Использовал команду UPDATE
+
+### Запрос: 
+
+#### update game set price = 2000 where Game_name = 'Red Dead Redemption';
+
+#### Скрин из DBeaver 22.1.2
+![]()
